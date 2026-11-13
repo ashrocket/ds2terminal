@@ -1,0 +1,26 @@
+/* ds-terminal-theme — generated from tokens.json */
+:root, [data-theme="light"] {
+  --ground: #fef49c;
+  --ink: #1c1a10;
+  --muted: #57522f;
+  --rule: #c9be62;
+  --link-blue: #1f4fb5;
+  --signal-red: #b3261e;
+  --signal-green: #2d6a2e;
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 32px;
+  --radius-none: 0px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --font-mono: "IBM Plex Mono", "SF Mono", Menlo, monospace;
+}
+.display { font-family: var(--font-mono); font-size: 64px; line-height: 66px; font-weight: 600; }
+.heading { font-family: var(--font-mono); font-size: 28px; line-height: 34px; font-weight: 600; }
+.lead { font-family: var(--font-mono); font-size: 18px; line-height: 26px; font-weight: 400; }
+.body { font-family: var(--font-mono); font-size: 15px; line-height: 22px; font-weight: 400; }
+.small { font-family: var(--font-mono); font-size: 13px; line-height: 18px; font-weight: 400; }
+.code { font-family: var(--font-mono); font-size: 13px; line-height: 20px; font-weight: 400; }

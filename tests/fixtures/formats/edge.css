@@ -1,0 +1,19 @@
+:root { color-scheme: light dark;
+  --background: 0 0% 100%;  --foreground: 222.2 84% 4.9%;  --primary: 221.2 83.2% 53.3%;
+  --surface: light-dark(#fafafa, #121212);
+  --text: light-dark(var(--ink, #111), #eee);
+  --border: color-mix(in oklab, var(--text) 20%, transparent);
+  --accent-rgb: 59 130 246;
+  --accent: rgb(var(--accent-rgb) / 0.9);
+  --chip: hsl(var(--primary));
+  --font-mono: "Berkeley Mono", "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root { --background: 222.2 84% 4.9%; --foreground: 210 40% 98%; } }
+[data-theme="dark"] { --primary: 217.2 91.2% 59.8%; }
+.theme-dim { --background: 220 13% 18%; }
+:root:not(.dark) { --only-light: #abcdef; }
+.button { --btn-bg: red; }
+@supports (color: color(display-p3 1 1 1)) { @media (color-gamut: p3) { :root { --surface: color(display-p3 0.98 0.98 0.98); } } }
+body { background-color: hsl(var(--background)); color: hsl(var(--foreground)); font-family: Inter, sans-serif; }
+@media print { :root { --background: 0 0% 100%; } }
+@theme { --color-brand-500: oklch(0.65 0.2 30); }

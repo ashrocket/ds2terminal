@@ -1,0 +1,1346 @@
+{
+ "name": "ds2terminal",
+ "version": "0.1.0",
+ "sources": [
+  "design-system/tokens.json"
+ ],
+ "themes": [
+  {
+   "name": "ds2terminal Light",
+   "file": "ds2terminal Light.terminal",
+   "mode": "light",
+   "derived": false,
+   "pass": true,
+   "background_alpha": 1.0,
+   "failed_gates": [],
+   "failed_before_repair": [
+    "cvd",
+    "text_on_color"
+   ],
+   "metrics": {
+    "fg_lc": 96.2,
+    "fg_wcag": 15.47,
+    "min_normal_lc": 55.0,
+    "min_bright_lc": 70.1,
+    "brightBlack_lc": 55.1,
+    "min_pair_dEok": 0.097,
+    "cvd_red_green_min": 0.071,
+    "fg_on_sel_lc": 84.6,
+    "sel_dEok": 0.06,
+    "ansi_on_sel_min_lc": 43.5,
+    "cursor_wcag": 4.74,
+    "black_on_green_cyan_yellow_min_lc": 31.6,
+    "faint_fg_lc": 39.7,
+    "faint_ansi_min_lc": 22.1
+   },
+   "slots": [
+    {
+     "slot": "background",
+     "key": "BackgroundColor",
+     "hex": "#fef49c",
+     "source": "token:ground",
+     "token_hex": "#fef49c",
+     "origin": "token",
+     "changed_from": null,
+     "apca_lc": null,
+     "wcag": null,
+     "note": "exact"
+    },
+    {
+     "slot": "foreground",
+     "key": "TextColor",
+     "hex": "#1c1a10",
+     "source": "token:ink",
+     "token_hex": "#1c1a10",
+     "origin": "token",
+     "changed_from": null,
+     "apca_lc": 96.2,
+     "wcag": 15.47,
+     "note": "exact (Lc 96.2)"
+    },
+    {
+     "slot": "bold",
+     "key": "TextBoldColor",
+     "hex": "#1c1a10",
+     "source": "alias:foreground",
+     "token_hex": null,
+     "origin": "alias",
+     "changed_from": null,
+     "apca_lc": 96.2,
+     "wcag": 15.47,
+     "note": "same as text"
+    },
+    {
+     "slot": "cursor",
+     "key": "CursorColor",
+     "hex": "#776c03",
+     "source": "token:ground",
+     "token_hex": "#fef49c",
+     "origin": "brand",
+     "changed_from": null,
+     "apca_lc": 68.3,
+     "wcag": 4.74,
+     "note": "lightness moved to WCAG 4.5"
+    },
+    {
+     "slot": "selection",
+     "key": "SelectionColor",
+     "hex": "#e9e08f",
+     "source": "mix:background+brand",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 9.1,
+     "wcag": 1.2,
+     "note": "OKLab mix of background and text, 0.08"
+    },
+    {
+     "slot": "black",
+     "key": "ANSIBlackColor",
+     "hex": "#000000",
+     "source": "derived:foreground",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 97.9,
+     "wcag": 18.63,
+     "note": "full-strength ink in the text hue"
+    },
+    {
+     "slot": "red",
+     "key": "ANSIRedColor",
+     "hex": "#d1666c",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 55.0,
+     "wcag": 3.2,
+     "note": "fallback: hue 18 Lc 55"
+    },
+    {
+     "slot": "green",
+     "key": "ANSIGreenColor",
+     "hex": "#4e902c",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": "#537a2e",
+     "apca_lc": 58.3,
+     "wcag": 3.48,
+     "note": "fallback: hue 132 Lc 66; repair: hue +5, C x1.30, Lc 58"
+    },
+    {
+     "slot": "yellow",
+     "key": "ANSIYellowColor",
+     "hex": "#926e10",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 64.4,
+     "wcag": 4.18,
+     "note": "fallback: hue 85 Lc 64"
+    },
+    {
+     "slot": "blue",
+     "key": "ANSIBlueColor",
+     "hex": "#487fbc",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 60.4,
+     "wcag": 3.7,
+     "note": "fallback: hue 252 Lc 60"
+    },
+    {
+     "slot": "magenta",
+     "key": "ANSIMagentaColor",
+     "hex": "#af6ba9",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 57.4,
+     "wcag": 3.39,
+     "note": "fallback: hue 330 Lc 57"
+    },
+    {
+     "slot": "cyan",
+     "key": "ANSICyanColor",
+     "hex": "#1a8588",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 62.1,
+     "wcag": 3.92,
+     "note": "fallback: hue 198 Lc 62"
+    },
+    {
+     "slot": "white",
+     "key": "ANSIWhiteColor",
+     "hex": "#98968c",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 48.1,
+     "wcag": 2.63,
+     "note": "light gray that stays readable, Lc 48"
+    },
+    {
+     "slot": "brightBlack",
+     "key": "ANSIBrightBlackColor",
+     "hex": "#8a887b",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 55.1,
+     "wcag": 3.16,
+     "note": "neutral tint, Lc 55"
+    },
+    {
+     "slot": "brightRed",
+     "key": "ANSIBrightRedColor",
+     "hex": "#aa444c",
+     "source": "derived:red",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 70.1,
+     "wcag": 5.12,
+     "note": "fallback: hue 18 Lc 70"
+    },
+    {
+     "slot": "brightGreen",
+     "key": "ANSIBrightGreenColor",
+     "hex": "#165a00",
+     "source": "derived:green",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": "#335801",
+     "apca_lc": 80.4,
+     "wcag": 7.46,
+     "note": "hue and chroma of the normal color"
+    },
+    {
+     "slot": "brightYellow",
+     "key": "ANSIBrightYellowColor",
+     "hex": "#6f4d00",
+     "source": "derived:yellow",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 78.3,
+     "wcag": 6.81,
+     "note": "fallback: hue 85 Lc 78"
+    },
+    {
+     "slot": "brightBlue",
+     "key": "ANSIBrightBlueColor",
+     "hex": "#285f99",
+     "source": "derived:blue",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 74.2,
+     "wcag": 5.85,
+     "note": "fallback: hue 252 Lc 74"
+    },
+    {
+     "slot": "brightMagenta",
+     "key": "ANSIBrightMagentaColor",
+     "hex": "#8b4a86",
+     "source": "derived:magenta",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 72.2,
+     "wcag": 5.45,
+     "note": "fallback: hue 330 Lc 72"
+    },
+    {
+     "slot": "brightCyan",
+     "key": "ANSIBrightCyanColor",
+     "hex": "#006266",
+     "source": "derived:cyan",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 76.1,
+     "wcag": 6.34,
+     "note": "fallback: hue 198 Lc 76"
+    },
+    {
+     "slot": "brightWhite",
+     "key": "ANSIBrightWhiteColor",
+     "hex": "#b5b4ad",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 32.5,
+     "wcag": 1.85,
+     "note": "lighter gray that stays readable, Lc 32"
+    }
+   ],
+   "gates": [
+    {
+     "gate": "fg_contrast",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "ansi_normal",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "ansi_bright",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "bright_relation",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "dim_brightBlack",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "inks_light",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "separation",
+     "pass": true,
+     "failures": [],
+     "target_misses": [
+      "blue/cyan dEok 0.097",
+      "brightBlue/brightCyan dEok 0.092"
+     ]
+    },
+    {
+     "gate": "cvd",
+     "pass": true,
+     "failures": [],
+     "target_misses": [
+      "red/green worst-case dEok 0.071"
+     ]
+    },
+    {
+     "gate": "selection",
+     "pass": true,
+     "failures": [],
+     "target_misses": [
+      "weakest chromatic ANSI on selection |Lc| 43.5"
+     ]
+    },
+    {
+     "gate": "cursor",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "bold",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "text_on_color",
+     "pass": true,
+     "failures": [],
+     "target_misses": [
+      "best of black/white/brightWhite on yellow |Lc| 31.7",
+      "best of black/white/brightWhite on cyan |Lc| 33.9"
+     ]
+    },
+    {
+     "gate": "hue_vs_text",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "faint_text",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "translucency",
+     "pass": true,
+     "failures": [],
+     "target_misses": [],
+     "info": "opaque (alpha 1, blur 0)"
+    }
+   ],
+   "repairs": [
+    "red #c1352b -> #d24352: hue -10, chroma x1.00, Lc 62 (fixes cvd)",
+    "fallback: all 12 chromatic colors synthesized from the research bands",
+    "green #537a2e -> #4e902c: hue +5, chroma x1.30, Lc 58 (fixes text_on_color)"
+   ],
+   "brand": "ground",
+   "brand_hex": "#fef49c",
+   "assignment": {
+    "red": "signal-red",
+    "green": "signal-green",
+    "yellow": null,
+    "blue": "link-blue",
+    "magenta": null,
+    "cyan": null
+   },
+   "notes": [],
+   "unused_tokens": [
+    "muted",
+    "rule"
+   ],
+   "character": {
+    "tokens_used": 3,
+    "tokens_exact": 2,
+    "slots": 21,
+    "kept": [],
+    "chroma_kept_min": null,
+    "chroma_kept_mean": null,
+    "hue_shift_max": null,
+    "bright_step_min": {
+     "slot": "blue",
+     "de": 0.108
+    },
+    "brand": {
+     "hex": "#fef49c",
+     "cursor": true,
+     "selection": true,
+     "hue_slot": null
+    },
+    "misses": [
+     "no hue color shows the brand color #fef49c"
+    ]
+   },
+   "claude_code": {
+    "claude_code_version": "2.1.323",
+    "ansi": {
+     "setting": "light-ansi",
+     "label": "Light mode (ANSI colors only)",
+     "rows": [
+      {
+       "pair": "text",
+       "text": "#000000",
+       "on": "#fef49c",
+       "lc": 97.9
+      },
+      {
+       "pair": "faint text",
+       "text": "#a9a368",
+       "on": "#fef49c",
+       "lc": 42.4
+      },
+      {
+       "pair": "secondary text",
+       "text": "#8a887b",
+       "on": "#fef49c",
+       "lc": 55.1
+      },
+      {
+       "pair": "user message",
+       "text": "#000000",
+       "on": "#98968c",
+       "lc": 47.8
+      },
+      {
+       "pair": "shell message",
+       "text": "#000000",
+       "on": "#b5b4ad",
+       "lc": 63.3
+      },
+      {
+       "pair": "added line",
+       "text": "#000000",
+       "on": "#4e902c",
+       "lc": 37.7
+      },
+      {
+       "pair": "removed line",
+       "text": "#000000",
+       "on": "#d1666c",
+       "lc": 40.9
+      },
+      {
+       "pair": "added word",
+       "text": "#000000",
+       "on": "#165a00",
+       "lc": 15.5
+      },
+      {
+       "pair": "removed word",
+       "text": "#000000",
+       "on": "#aa444c",
+       "lc": 25.9
+      },
+      {
+       "pair": "selected text",
+       "text": "#000000",
+       "on": "#1a8588",
+       "lc": 33.9
+      },
+      {
+       "pair": "Claude color",
+       "text": "#aa444c",
+       "on": "#fef49c",
+       "lc": 70.1
+      },
+      {
+       "pair": "success",
+       "text": "#4e902c",
+       "on": "#fef49c",
+       "lc": 58.3
+      },
+      {
+       "pair": "error",
+       "text": "#d1666c",
+       "on": "#fef49c",
+       "lc": 55.0
+      },
+      {
+       "pair": "warning",
+       "text": "#926e10",
+       "on": "#fef49c",
+       "lc": 64.4
+      },
+      {
+       "pair": "permission",
+       "text": "#487fbc",
+       "on": "#fef49c",
+       "lc": 60.4
+      },
+      {
+       "pair": "plan mode",
+       "text": "#1a8588",
+       "on": "#fef49c",
+       "lc": 62.1
+      }
+     ],
+     "weakest": {
+      "pair": "selected text",
+      "lc": 33.9
+     }
+    },
+    "standard": {
+     "setting": "light",
+     "rows": [
+      {
+       "pair": "text",
+       "text": "#000000",
+       "on": "#fef49c",
+       "lc": 97.9
+      },
+      {
+       "pair": "faint text",
+       "text": "#a9a368",
+       "on": "#fef49c",
+       "lc": 42.4
+      },
+      {
+       "pair": "secondary text",
+       "text": "#666666",
+       "on": "#fef49c",
+       "lc": 70.6
+      },
+      {
+       "pair": "user message",
+       "text": "#000000",
+       "on": "#f0f0f0",
+       "lc": 97.1
+      },
+      {
+       "pair": "shell message",
+       "text": "#000000",
+       "on": "#faf5fa",
+       "lc": 100.9
+      },
+      {
+       "pair": "added line",
+       "text": "#000000",
+       "on": "#69db7c",
+       "lc": 72.3
+      },
+      {
+       "pair": "removed line",
+       "text": "#000000",
+       "on": "#ffa8b4",
+       "lc": 69.9
+      },
+      {
+       "pair": "added word",
+       "text": "#000000",
+       "on": "#2f9d44",
+       "lc": 42.1
+      },
+      {
+       "pair": "removed word",
+       "text": "#000000",
+       "on": "#d1454b",
+       "lc": 33.9
+      },
+      {
+       "pair": "selected text",
+       "text": "#000000",
+       "on": "#b4d5ff",
+       "lc": 79.9
+      },
+      {
+       "pair": "Claude color",
+       "text": "#d77757",
+       "on": "#fef49c",
+       "lc": 50.1
+      },
+      {
+       "pair": "success",
+       "text": "#2c7a39",
+       "on": "#fef49c",
+       "lc": 68.0
+      },
+      {
+       "pair": "error",
+       "text": "#ab2b3f",
+       "on": "#fef49c",
+       "lc": 73.5
+      },
+      {
+       "pair": "warning",
+       "text": "#966c1e",
+       "on": "#fef49c",
+       "lc": 64.4
+      },
+      {
+       "pair": "permission",
+       "text": "#5769f7",
+       "on": "#fef49c",
+       "lc": 61.9
+      },
+      {
+       "pair": "plan mode",
+       "text": "#006666",
+       "on": "#fef49c",
+       "lc": 74.8
+      }
+     ],
+     "weakest": {
+      "pair": "removed line",
+      "lc": 69.9
+     }
+    },
+    "recommend": "standard",
+    "reason": "ANSI theme: selected text is Lc 34, below 45. Standard theme: the weakest text pair is removed line, Lc 70"
+   },
+   "source_mode": "default"
+  },
+  {
+   "name": "ds2terminal Dark",
+   "file": "ds2terminal Dark.terminal",
+   "mode": "dark",
+   "derived": true,
+   "pass": true,
+   "background_alpha": 1.0,
+   "failed_gates": [],
+   "failed_before_repair": [],
+   "metrics": {
+    "fg_lc": 95.5,
+    "fg_wcag": 15.05,
+    "min_normal_lc": 53.3,
+    "min_bright_lc": 70.1,
+    "brightBlack_lc": 45.5,
+    "min_pair_dEok": 0.084,
+    "cvd_red_green_min": 0.074,
+    "fg_on_sel_lc": 91.9,
+    "sel_dEok": 0.09,
+    "ansi_on_sel_min_lc": 49.6,
+    "cursor_wcag": 15.47,
+    "black_on_green_cyan_yellow_min_lc": 74.3,
+    "faint_fg_lc": 31.3,
+    "faint_ansi_min_lc": 16.4
+   },
+   "slots": [
+    {
+     "slot": "background",
+     "key": "BackgroundColor",
+     "hex": "#1c1a10",
+     "source": "token:ink",
+     "token_hex": "#1c1a10",
+     "origin": "token",
+     "changed_from": null,
+     "apca_lc": null,
+     "wcag": null,
+     "note": "exact; light-mode text token as dark background"
+    },
+    {
+     "slot": "foreground",
+     "key": "TextColor",
+     "hex": "#f0efe0",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": "#e8e7d8",
+     "apca_lc": 95.5,
+     "wcag": 15.05,
+     "note": "neutral tint, Lc 90; lightness moved to Lc 95 for faint text"
+    },
+    {
+     "slot": "bold",
+     "key": "TextBoldColor",
+     "hex": "#f6f5ec",
+     "source": "derived:foreground",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 99.7,
+     "wcag": 15.93,
+     "note": "the text color, brighter: Lc 100"
+    },
+    {
+     "slot": "cursor",
+     "key": "CursorColor",
+     "hex": "#fef49c",
+     "source": "token:ground",
+     "token_hex": "#fef49c",
+     "origin": "brand",
+     "changed_from": null,
+     "apca_lc": 97.6,
+     "wcag": 15.47,
+     "note": "exact (WCAG 15.47)"
+    },
+    {
+     "slot": "selection",
+     "key": "SelectionColor",
+     "hex": "#32301e",
+     "source": "mix:background+brand",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 0.0,
+     "wcag": 1.31,
+     "note": "OKLab mix of background and brand, 0.12"
+    },
+    {
+     "slot": "black",
+     "key": "ANSIBlackColor",
+     "hex": "#0c0b03",
+     "source": "derived:background",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 0.0,
+     "wcag": 1.13,
+     "note": "dark surface (L 0.15) for black text on colored bars"
+    },
+    {
+     "slot": "red",
+     "key": "ANSIRedColor",
+     "hex": "#ff8171",
+     "source": "token:signal-red",
+     "token_hex": "#b3261e",
+     "origin": "token",
+     "changed_from": null,
+     "apca_lc": 53.3,
+     "wcag": 7.16,
+     "note": "L 0.501->0.743, Lc 19.7->53.3"
+    },
+    {
+     "slot": "green",
+     "key": "ANSIGreenColor",
+     "hex": "#98d896",
+     "source": "token:signal-green",
+     "token_hex": "#2d6a2e",
+     "origin": "token",
+     "changed_from": null,
+     "apca_lc": 72.3,
+     "wcag": 10.46,
+     "note": "L 0.469->0.822, Lc 18.4->72.3"
+    },
+    {
+     "slot": "yellow",
+     "key": "ANSIYellowColor",
+     "hex": "#f0d474",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 80.2,
+     "wcag": 11.93,
+     "note": "hue 85 turned +8.0 toward the brand, C 0.120, Lc 80"
+    },
+    {
+     "slot": "blue",
+     "key": "ANSIBlueColor",
+     "hex": "#79abff",
+     "source": "token:link-blue",
+     "token_hex": "#1f4fb5",
+     "origin": "token-named",
+     "changed_from": null,
+     "apca_lc": 55.3,
+     "wcag": 7.54,
+     "note": "L 0.460->0.741, Lc 15.6->55.3"
+    },
+    {
+     "slot": "magenta",
+     "key": "ANSIMagentaColor",
+     "hex": "#fa9ff2",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 66.4,
+     "wcag": 9.39,
+     "note": "hue 330, C 0.150, Lc 66"
+    },
+    {
+     "slot": "cyan",
+     "key": "ANSICyanColor",
+     "hex": "#72ddd6",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 74.4,
+     "wcag": 10.82,
+     "note": "hue 198 turned -8.0 toward the brand, C 0.100, Lc 74"
+    },
+    {
+     "slot": "white",
+     "key": "ANSIWhiteColor",
+     "hex": "#d4d3c4",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 78.1,
+     "wcag": 11.55,
+     "note": "neutral tint, Lc 78"
+    },
+    {
+     "slot": "brightBlack",
+     "key": "ANSIBrightBlackColor",
+     "hex": "#9a998b",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 45.5,
+     "wcag": 6.06,
+     "note": "neutral tint, Lc 45"
+    },
+    {
+     "slot": "brightRed",
+     "key": "ANSIBrightRedColor",
+     "hex": "#ffb2a5",
+     "source": "derived:red",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 70.3,
+     "wcag": 10.1,
+     "note": "hue and chroma of red, Lc 70"
+    },
+    {
+     "slot": "brightGreen",
+     "key": "ANSIBrightGreenColor",
+     "hex": "#a5e6a3",
+     "source": "derived:green",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 80.5,
+     "wcag": 11.99,
+     "note": "hue and chroma of green, Lc 80"
+    },
+    {
+     "slot": "brightYellow",
+     "key": "ANSIBrightYellowColor",
+     "hex": "#fee181",
+     "source": "derived:yellow",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 88.3,
+     "wcag": 13.53,
+     "note": "hue and chroma of yellow, Lc 88"
+    },
+    {
+     "slot": "brightBlue",
+     "key": "ANSIBrightBlueColor",
+     "hex": "#a1c7ff",
+     "source": "derived:blue",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 70.1,
+     "wcag": 10.07,
+     "note": "hue and chroma of blue, Lc 70"
+    },
+    {
+     "slot": "brightMagenta",
+     "key": "ANSIBrightMagentaColor",
+     "hex": "#ffb2ff",
+     "source": "derived:magenta",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 74.5,
+     "wcag": 10.85,
+     "note": "hue and chroma of magenta, Lc 74"
+    },
+    {
+     "slot": "brightCyan",
+     "key": "ANSIBrightCyanColor",
+     "hex": "#80ebe4",
+     "source": "derived:cyan",
+     "token_hex": null,
+     "origin": "derived",
+     "changed_from": null,
+     "apca_lc": 82.6,
+     "wcag": 12.39,
+     "note": "hue and chroma of cyan, Lc 82"
+    },
+    {
+     "slot": "brightWhite",
+     "key": "ANSIBrightWhiteColor",
+     "hex": "#f0efe6",
+     "source": "synthesized",
+     "token_hex": null,
+     "origin": "synth",
+     "changed_from": null,
+     "apca_lc": 95.8,
+     "wcag": 15.1,
+     "note": "neutral tint, Lc 96"
+    }
+   ],
+   "gates": [
+    {
+     "gate": "fg_contrast",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "halation",
+     "pass": true,
+     "failures": [],
+     "target_misses": [
+      "fg |Lc| 95.5, fg L 0.949, bg L 0.217"
+     ]
+    },
+    {
+     "gate": "ansi_normal",
+     "pass": true,
+     "failures": [],
+     "target_misses": [
+      "red |Lc| 53.3 WCAG 7.16",
+      "blue |Lc| 55.3 WCAG 7.54"
+     ]
+    },
+    {
+     "gate": "ansi_bright",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "bright_relation",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "dim_brightBlack",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "grays_dark",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "separation",
+     "pass": true,
+     "failures": [],
+     "target_misses": [
+      "green/cyan dEok 0.084",
+      "brightGreen/brightCyan dEok 0.085"
+     ]
+    },
+    {
+     "gate": "cvd",
+     "pass": true,
+     "failures": [],
+     "target_misses": [
+      "red/green worst-case dEok 0.074"
+     ]
+    },
+    {
+     "gate": "selection",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "cursor",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "bold",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "text_on_color",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "hue_vs_text",
+     "pass": true,
+     "failures": [],
+     "target_misses": []
+    },
+    {
+     "gate": "faint_text",
+     "pass": true,
+     "failures": [],
+     "target_misses": [
+      "faint foreground |Lc| 31.3 < 33",
+      "weakest faint hue color |Lc| 16.4 < 20"
+     ]
+    },
+    {
+     "gate": "translucency",
+     "pass": true,
+     "failures": [],
+     "target_misses": [],
+     "info": "opaque (alpha 1, blur 0)"
+    }
+   ],
+   "repairs": [],
+   "brand": "ground",
+   "brand_hex": "#fef49c",
+   "assignment": {
+    "red": "signal-red",
+    "green": "signal-green",
+    "yellow": null,
+    "blue": "link-blue",
+    "magenta": null,
+    "cyan": null
+   },
+   "notes": [],
+   "unused_tokens": [
+    "muted",
+    "rule"
+   ],
+   "character": {
+    "tokens_used": 5,
+    "tokens_exact": 2,
+    "slots": 21,
+    "kept": [
+     {
+      "slot": "red",
+      "token": "signal-red",
+      "token_hex": "#b3261e",
+      "hex": "#ff8171",
+      "chroma_kept": 0.88,
+      "hue_shift": 0.1
+     },
+     {
+      "slot": "green",
+      "token": "signal-green",
+      "token_hex": "#2d6a2e",
+      "hex": "#98d896",
+      "chroma_kept": 1.0,
+      "hue_shift": 0.1
+     },
+     {
+      "slot": "blue",
+      "token": "link-blue",
+      "token_hex": "#1f4fb5",
+      "hex": "#79abff",
+      "chroma_kept": 0.78,
+      "hue_shift": 2.3
+     }
+    ],
+    "chroma_kept_min": {
+     "slot": "blue",
+     "token": "link-blue",
+     "token_hex": "#1f4fb5",
+     "hex": "#79abff",
+     "chroma_kept": 0.78,
+     "hue_shift": 2.3
+    },
+    "chroma_kept_mean": 0.89,
+    "hue_shift_max": {
+     "slot": "blue",
+     "token": "link-blue",
+     "token_hex": "#1f4fb5",
+     "hex": "#79abff",
+     "chroma_kept": 0.78,
+     "hue_shift": 2.3
+    },
+    "bright_step_min": {
+     "slot": "yellow",
+     "de": 0.04
+    },
+    "brand": {
+     "hex": "#fef49c",
+     "cursor": true,
+     "selection": true,
+     "hue_slot": "yellow"
+    },
+    "misses": []
+   },
+   "claude_code": {
+    "claude_code_version": "2.1.323",
+    "ansi": {
+     "setting": "dark-ansi",
+     "label": "Dark mode (ANSI colors only)",
+     "rows": [
+      {
+       "pair": "text",
+       "text": "#f0efe6",
+       "on": "#1c1a10",
+       "lc": 95.8
+      },
+      {
+       "pair": "faint text",
+       "text": "#7d7c74",
+       "on": "#1c1a10",
+       "lc": 31.4
+      },
+      {
+       "pair": "secondary text",
+       "text": "#d4d3c4",
+       "on": "#1c1a10",
+       "lc": 78.1
+      },
+      {
+       "pair": "user message",
+       "text": "#f0efe6",
+       "on": "#9a998b",
+       "lc": 49.6
+      },
+      {
+       "pair": "shell message",
+       "text": "#f0efe6",
+       "on": "#0c0b03",
+       "lc": 97.0
+      },
+      {
+       "pair": "added line",
+       "text": "#f0efe6",
+       "on": "#98d896",
+       "lc": 22.2
+      },
+      {
+       "pair": "removed line",
+       "text": "#f0efe6",
+       "on": "#ff8171",
+       "lc": 41.6
+      },
+      {
+       "pair": "added word",
+       "text": "#f0efe6",
+       "on": "#a5e6a3",
+       "lc": 13.7
+      },
+      {
+       "pair": "removed word",
+       "text": "#f0efe6",
+       "on": "#ffb2a5",
+       "lc": 24.2
+      },
+      {
+       "pair": "selected text",
+       "text": "#f0efe6",
+       "on": "#79abff",
+       "lc": 39.6
+      },
+      {
+       "pair": "Claude color",
+       "text": "#ffb2a5",
+       "on": "#1c1a10",
+       "lc": 70.3
+      },
+      {
+       "pair": "success",
+       "text": "#a5e6a3",
+       "on": "#1c1a10",
+       "lc": 80.5
+      },
+      {
+       "pair": "error",
+       "text": "#ffb2a5",
+       "on": "#1c1a10",
+       "lc": 70.3
+      },
+      {
+       "pair": "warning",
+       "text": "#fee181",
+       "on": "#1c1a10",
+       "lc": 88.3
+      },
+      {
+       "pair": "permission",
+       "text": "#a1c7ff",
+       "on": "#1c1a10",
+       "lc": 70.1
+      },
+      {
+       "pair": "plan mode",
+       "text": "#80ebe4",
+       "on": "#1c1a10",
+       "lc": 82.6
+      }
+     ],
+     "weakest": {
+      "pair": "added line",
+      "lc": 22.2
+     }
+    },
+    "standard": {
+     "setting": "dark",
+     "rows": [
+      {
+       "pair": "text",
+       "text": "#ffffff",
+       "on": "#1c1a10",
+       "lc": 106.6
+      },
+      {
+       "pair": "faint text",
+       "text": "#848380",
+       "on": "#1c1a10",
+       "lc": 34.9
+      },
+      {
+       "pair": "secondary text",
+       "text": "#999999",
+       "on": "#1c1a10",
+       "lc": 45.9
+      },
+      {
+       "pair": "user message",
+       "text": "#ffffff",
+       "on": "#373737",
+       "lc": 100.9
+      },
+      {
+       "pair": "shell message",
+       "text": "#ffffff",
+       "on": "#413c41",
+       "lc": 98.9
+      },
+      {
+       "pair": "added line",
+       "text": "#ffffff",
+       "on": "#225c2b",
+       "lc": 92.1
+      },
+      {
+       "pair": "removed line",
+       "text": "#ffffff",
+       "on": "#7a2936",
+       "lc": 95.7
+      },
+      {
+       "pair": "added word",
+       "text": "#ffffff",
+       "on": "#38a660",
+       "lc": 62.9
+      },
+      {
+       "pair": "removed word",
+       "text": "#ffffff",
+       "on": "#b3596b",
+       "lc": 77.1
+      },
+      {
+       "pair": "selected text",
+       "text": "#ffffff",
+       "on": "#264f78",
+       "lc": 93.6
+      },
+      {
+       "pair": "Claude color",
+       "text": "#d77757",
+       "on": "#1c1a10",
+       "lc": 42.2
+      },
+      {
+       "pair": "success",
+       "text": "#4eba65",
+       "on": "#1c1a10",
+       "lc": 52.6
+      },
+      {
+       "pair": "error",
+       "text": "#ff6b80",
+       "on": "#1c1a10",
+       "lc": 48.3
+      },
+      {
+       "pair": "warning",
+       "text": "#ffc107",
+       "on": "#1c1a10",
+       "lc": 73.8
+      },
+      {
+       "pair": "permission",
+       "text": "#b1b9f9",
+       "on": "#1c1a10",
+       "lc": 65.6
+      },
+      {
+       "pair": "plan mode",
+       "text": "#48968c",
+       "on": "#1c1a10",
+       "lc": 38.1
+      }
+     ],
+     "weakest": {
+      "pair": "secondary text",
+      "lc": 45.9
+     }
+    },
+    "recommend": "standard",
+    "reason": "ANSI theme: added line is Lc 22, below 45. Standard theme: the weakest text pair is secondary text, Lc 46"
+   },
+   "source_mode": "default"
+  }
+ ],
+ "font": {
+  "postscript": "SFMonoTerminal-Regular",
+  "size": 13.0,
+  "note": "design system font SF Mono: uses SF Mono Terminal"
+ },
+ "notes": [],
+ "ignored_tokens": [],
+ "icc": "embedded"
+}

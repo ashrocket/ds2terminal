@@ -1,0 +1,11 @@
+{
+  "_note": "Pidgin builtin document styles, from pidgin_list_design_systems on 2026-10-17. Light palettes only.",
+  "pidgin-editorial": {"bg":"#F6EEDF","surface":"#EDE0C8","text":"#281D14","muted":"#5C4F42","faint":"#8A7B6B","accent":"#B4552D","rule":"#D8C9B0","positive":"#4F6B45"},
+  "boardroom": {"bg":"#F8F9FB","surface":"#EDF1F6","text":"#1A2433","muted":"#4D5A6E","faint":"#8391A5","accent":"#1B5CC4","rule":"#D9DFE8","positive":"#1C7C4D"},
+  "poignant": {"bg":"#FFF8E7","surface":"#FBEBC9","text":"#3B2C24","muted":"#7A6455","faint":"#A38F7D","accent":"#D8442E","rule":"#E8CFA0","positive":"#1F8A70"},
+  "solidified-sky": {"bg":"#F7F5F0","surface":"#EEF3EE","text":"#1B1F1C","muted":"#52584F","faint":"#8A9086","accent":"#3C6E56","rule":"#E4E0D6","positive":"#2F9E5C"},
+  "gazette": {"bg":"#F7F1E3","surface":"#EFE6CE","text":"#201B12","muted":"#5C523D","faint":"#8A7E63","accent":"#8A6A14","rule":"#DCCFA8","positive":"#2E5D4B"},
+  "riso": {"bg":"#FFF7EE","surface":"#FFE8D8","text":"#23205A","muted":"#5A5588","faint":"#8B87AE","accent":"#E82563","rule":"#E8D5C4","positive":"#00875F"},
+  "sumi": {"bg":"#F7F5EF","surface":"#ECE9DF","text":"#262420","muted":"#6B675C","faint":"#9A9587","accent":"#B23A2E","rule":"#D9D4C5","positive":"#5A6B4F"},
+  "teletype": {"bg":"#F6F3EA","surface":"#ECE7D8","text":"#2B2A24","muted":"#6B685C","faint":"#98937F","accent":"#B3372B","rule":"#DCD5BF","positive":"#2F6B46"}
+}

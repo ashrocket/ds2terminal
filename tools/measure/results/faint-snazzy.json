@@ -1,0 +1,234 @@
+{
+ "window_id": 17070,
+ "profile": "Snazzy",
+ "size": [
+  1320,
+  1120
+ ],
+ "background": "#2a2f3a",
+ "pairs": [
+  {
+   "label": "anchor_top",
+   "sgr": "",
+   "normal": "#f0f0ea",
+   "faint": "#eff1ec",
+   "spread": [
+    2,
+    3
+   ]
+  },
+  {
+   "label": "fg",
+   "sgr": "",
+   "normal": "#eff0eb",
+   "faint": "#858789",
+   "spread": [
+    2,
+    2
+   ]
+  },
+  {
+   "label": "red",
+   "sgr": "31",
+   "normal": "#ff8174",
+   "faint": "#8c5251",
+   "spread": [
+    2,
+    2
+   ]
+  },
+  {
+   "label": "green",
+   "sgr": "32",
+   "normal": "#62ff95",
+   "faint": "#428c62",
+   "spread": [
+    4,
+    2
+   ]
+  },
+  {
+   "label": "yellow",
+   "sgr": "33",
+   "normal": "#f7fe9b",
+   "faint": "#878d64",
+   "spread": [
+    2,
+    2
+   ]
+  },
+  {
+   "label": "blue",
+   "sgr": "34",
+   "normal": "#6fdfff",
+   "faint": "#487e92",
+   "spread": [
+    2,
+    2
+   ]
+  },
+  {
+   "label": "magenta",
+   "sgr": "35",
+   "normal": "#ff89e5",
+   "faint": "#8c5787",
+   "spread": [
+    2,
+    3
+   ]
+  },
+  {
+   "label": "cyan",
+   "sgr": "36",
+   "normal": "#a3f8ff",
+   "faint": "#608b93",
+   "spread": [
+    2,
+    1
+   ]
+  },
+  {
+   "label": "white",
+   "sgr": "37",
+   "normal": "#f6f6f5",
+   "faint": "#888a8e",
+   "spread": [
+    1,
+    2
+   ]
+  },
+  {
+   "label": "brightBlack",
+   "sgr": "90",
+   "normal": "#9a9b9a",
+   "faint": "#5d5e63",
+   "spread": [
+    1,
+    2
+   ]
+  },
+  {
+   "label": "brightRed",
+   "sgr": "91",
+   "normal": "#ff8174",
+   "faint": "#8c5251",
+   "spread": [
+    2,
+    2
+   ]
+  },
+  {
+   "label": "brightWhite",
+   "sgr": "97",
+   "normal": "#f7f6f4",
+   "faint": "#88898d",
+   "spread": [
+    2,
+    2
+   ]
+  },
+  {
+   "label": "bold_fg",
+   "sgr": "1",
+   "normal": "#f7f8f8",
+   "faint": "#898b8f",
+   "spread": [
+    2,
+    2
+   ]
+  },
+  {
+   "label": "tc_ffffff",
+   "sgr": "38;2;255;255;255",
+   "normal": "#fffffe",
+   "faint": "#8c8d92",
+   "spread": [
+    1,
+    2
+   ]
+  },
+  {
+   "label": "tc_808080",
+   "sgr": "38;2;128;128;128",
+   "normal": "#808080",
+   "faint": "#505359",
+   "spread": [
+    1,
+    2
+   ]
+  },
+  {
+   "label": "tc_000000",
+   "sgr": "38;2;0;0;0",
+   "normal": "#000000",
+   "faint": "#191b23",
+   "spread": [
+    1,
+    2
+   ]
+  },
+  {
+   "label": "tc_00ff00",
+   "sgr": "38;2;0;255;0",
+   "normal": "#0fff07",
+   "faint": "#258b25",
+   "spread": [
+    15,
+    3
+   ]
+  },
+  {
+   "label": "tc_ffffff_on_black",
+   "sgr": "38;2;255;255;255;48;2;0;0;0",
+   "normal": "#feffff",
+   "faint": "#7a7a7a",
+   "spread": [
+    1,
+    2
+   ]
+  },
+  {
+   "label": "tc_000000_on_white",
+   "sgr": "38;2;0;0;0;48;2;255;255;255",
+   "normal": "#000000",
+   "faint": "#a9a9aa",
+   "spread": [
+    1,
+    2
+   ]
+  },
+  {
+   "label": "x256_196",
+   "sgr": "38;5;196",
+   "normal": "#ff0000",
+   "faint": "#8c2226",
+   "spread": [
+    5,
+    1
+   ]
+  },
+  {
+   "label": "anchor_bottom",
+   "sgr": "",
+   "normal": "#eff0eb",
+   "faint": "#eff1ea",
+   "spread": [
+    2,
+    2
+   ]
+  }
+ ],
+ "rows": {
+  "top": [
+   187,
+   217
+  ],
+  "bottom": [
+   935,
+   965
+  ],
+  "runs_found": 12,
+  "expected": 12
+ },
+ "note": "Three sample rows that used a private color were removed from this file."
+}

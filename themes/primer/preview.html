@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Primer Terminal Preview</title>
+<style>
+:root { --page:#f4f4f5; --ink:#18181b; }
+@media (prefers-color-scheme: dark) { :root { --page:#18181b; --ink:#f4f4f5; } }
+body { margin:0; padding:16px; background:var(--page); color:var(--ink);
+       font:14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+section { max-width:900px; margin:0 auto 32px; }
+h1 { max-width:900px; margin:0 auto 16px; font-size:20px; }
+h2 { font-size:16px; } small { font-weight:400; opacity:.75; }
+.term { font:13px/1.35 "SF Mono", ui-monospace, Menlo, monospace; padding:12px 14px; border-radius:8px;
+        overflow-x:auto; white-space:pre; border:1px solid rgba(128,128,128,.45); }
+.swrow { display:flex; flex-wrap:wrap; gap:4px; margin-top:4px; }
+.sw { flex:1 1 90px; min-width:70px; padding:6px; border-radius:4px; font:11px/1.3 ui-monospace, Menlo, monospace; }
+</style></head><body>
+<h1>Primer: Terminal themes</h1>
+<section><h2>Primer Light.terminal <small>light, all hard gates pass</small></h2><pre class="term" style="background:#ffffff;color:#1f2328"><span style="color:#2f8e46;font-weight:700">ash@mac</span><span style="color:#1f2328">:</span><span style="color:#2279eb;font-weight:700">~/project</span><span style="color:#905fef"> (main)</span><span style="color:#1f2328"> $ </span><span style="">ls -la</span>
+<span style="color:#1f2328">drwxr-xr-x  </span><span style="color:#2279eb;font-weight:700">src</span><span style="color:#1f2328">   </span><span style="color:#2f8e46;font-weight:700">build.sh</span><span style="color:#1f2328">   </span><span style="color:#905fef">link</span><span style="color:#1f2328">   README.md</span><span style="color:#1f2328">   </span><span style="color:#1f2328;background:#a67219">sticky</span>
+<span style="color:#1f2328">$ </span><span style="color:#1f2328">git diff</span>
+<span style="color:#1f2328;font-weight:700">diff --git a/app.py b/app.py</span>
+<span style="color:#25898c">@@ -12,7 +12,8 @@ def main():</span>
+<span style="color:#ed4446">-    total = price * qty</span>
+<span style="color:#2f8e46">+    total = round(price * qty, 2)</span>
+<span style="color:#a67219">commit 3f1f428 </span><span style="color:#1f2328">(HEAD -&gt; main)</span>
+<span style="color:#1f2328">$ </span><span style="color:#1f2328">make</span>
+<span style="color:#1f2328;font-weight:700">app.c:42:7: </span><span style="color:#ed4446;font-weight:700">error: </span><span style="color:#1f2328;font-weight:700">use of undeclared identifier &#x27;x&#x27;</span>
+<span style="color:#1f2328;font-weight:700">app.c:51:3: </span><span style="color:#905fef;font-weight:700">warning: </span><span style="color:#1f2328;font-weight:700">unused variable &#x27;tmp&#x27;</span>
+<span style="color:#1f2328;font-weight:700">app.c:51:3: </span><span style="color:#25898c;font-weight:700">note: </span><span style="color:#1f2328">declared here</span>
+<span style="color:#1f2328">  1  [</span><span style="color:#2f8e46">|||||||||</span><span style="color:#ed4446">|||</span><span style="color:#1f2328">        42.0%</span><span style="color:#1f2328">]</span>
+<span style="color:#1f2328;background:#2f8e46"> PID USER      CPU%  Command </span>
+<span style="color:#1f2328;background:#25898c"> 812 ash       12.0  python3 </span><span style="color:#1f2328"> F1</span><span style="color:#1f2328;background:#25898c">Help </span><span style="color:#1f2328"> F10</span><span style="color:#1f2328;background:#25898c">Quit</span>
+<span style="color:#1f2328">$ </span><span style="color:#1f2328">git commi</span><span style="color:#9ba9bb">t -m &quot;fix&quot;</span><span style="color:#9ba9bb">   # brightBlack: suggestions, comments</span>
+<span style="color:#1f2328;background:#d6e5fb">selected text on the selection color, with </span><span style="color:#ed4446;background:#d6e5fb">red</span><span style="color:#1f2328;background:#d6e5fb"> </span><span style="color:#2f8e46;background:#d6e5fb">green</span><span style="color:#1f2328;background:#d6e5fb"> </span><span style="color:#2279eb;background:#d6e5fb">blue</span>
+<span style="color:#1f2328;font-weight:700">bold text</span><span style="color:#1f2328">  normal text  </span><span style="color:#9ea6ae">white</span><span style="color:#bfc4ca">  brightWhite</span><span style="color:#1f2328">  </span><span style="color:#9a6700">Y</span><span style="color:#1a7f37">G</span><span style="color:#0969da">U</span><span style="color:#1f2328">  cursor:</span><span style="color:#ffffff;background:#0969da"> </span>
+<span style="color:#b0b1b3">faint (SGR 2): </span><span style="color:#b0b1b3">text </span><span style="color:#f8bbbb">red </span><span style="color:#b5d4bb">green </span><span style="color:#ddcaaf">yellow </span><span style="color:#b1ccf7">blue </span><span style="color:#d4c3f9">magenta </span><span style="color:#b2d2d3">cyan </span><span style="color:#edb2b5">brightRed </span><span style="color:#abc7f0">brightBlue</span>
+
+<span style="color:#9ba9bb"># Claude Code, ANSI theme (light-ansi)</span>
+<span style="color:#1f2328;background:#9ea6ae"> &gt; fix the rounding bug in app.py                              </span>
+<span style="color:#d1242f">⏺ </span><span style="color:#1f2328;font-weight:700">Update</span><span style="color:#1f2328">(app.py)</span>
+<span style="color:#b0b1b3">  ⎿  Updated app.py with 1 addition and 1 removal</span>
+<span style="color:#b0b1b3">     12 </span><span style="color:#1f2328;background:#ed4446">-    total = </span><span style="color:#1f2328;background:#d1242f">price * qty</span><span style="color:#1f2328;background:#ed4446">            </span>
+<span style="color:#b0b1b3">     12 </span><span style="color:#1f2328;background:#2f8e46">+    total = </span><span style="color:#1f2328;background:#1a7f37">round(price * qty, 2)</span><span style="color:#1f2328;background:#2f8e46">  </span>
+<span style="color:#b0b1b3">     … +14 lines (ctrl+o to expand)</span>
+<span style="color:#2f8e46">⏺ </span><span style="color:#1f2328">Tests pass.  </span><span style="color:#a67219">warning </span><span style="color:#ed4446">error </span><span style="color:#2279eb">permission </span><span style="color:#25898c">plan mode</span>
+<span style="color:#b0b1b3">  import sys, time    # collapsed preview: faint text</span>
+
+<span style="color:#666666"># Claude Code, standard theme (light)</span>
+<span style="color:#000000;background:#f0f0f0"> &gt; fix the rounding bug in app.py                              </span>
+<span style="color:#d77757">⏺ </span><span style="color:#000000;font-weight:700">Update</span><span style="color:#000000">(app.py)</span>
+<span style="color:#aaaaaa">  ⎿  Updated app.py with 1 addition and 1 removal</span>
+<span style="color:#aaaaaa">     12 </span><span style="color:#000000;background:#ffa8b4">-    total = </span><span style="color:#000000;background:#d1454b">price * qty</span><span style="color:#000000;background:#ffa8b4">            </span>
+<span style="color:#aaaaaa">     12 </span><span style="color:#000000;background:#69db7c">+    total = </span><span style="color:#000000;background:#2f9d44">round(price * qty, 2)</span><span style="color:#000000;background:#69db7c">  </span>
+<span style="color:#aaaaaa">     … +14 lines (ctrl+o to expand)</span>
+<span style="color:#2c7a39">⏺ </span><span style="color:#000000">Tests pass.  </span><span style="color:#966c1e">warning </span><span style="color:#ab2b3f">error </span><span style="color:#5769f7">permission </span><span style="color:#006666">plan mode</span>
+<span style="color:#aaaaaa">  import sys, time    # collapsed preview: faint text</span></pre><div class="swrow"><div class="sw" style="background:#1f2328;color:#fff" title="black derived:foreground">0<br>#1f2328</div><div class="sw" style="background:#ed4446;color:#fff" title="red token:fgColor.danger">1<br>#ed4446</div><div class="sw" style="background:#2f8e46;color:#fff" title="green token:fgColor.success">2<br>#2f8e46</div><div class="sw" style="background:#a67219;color:#fff" title="yellow token:fgColor.attention">3<br>#a67219</div><div class="sw" style="background:#2279eb;color:#fff" title="blue token:fgColor.link">4<br>#2279eb</div><div class="sw" style="background:#905fef;color:#fff" title="magenta token:fgColor.done">5<br>#905fef</div><div class="sw" style="background:#25898c;color:#fff" title="cyan token:base.display.color.teal.5">6<br>#25898c</div><div class="sw" style="background:#9ea6ae;color:#000" title="white synthesized">7<br>#9ea6ae</div></div><div class="swrow"><div class="sw" style="background:#9ba9bb;color:#000" title="brightBlack token:base.display.color.gray.3">8<br>#9ba9bb</div><div class="sw" style="background:#d1242f;color:#fff" title="brightRed token:fgColor.danger">9<br>#d1242f</div><div class="sw" style="background:#1a7f37;color:#fff" title="brightGreen token:fgColor.success">10<br>#1a7f37</div><div class="sw" style="background:#9a6700;color:#fff" title="brightYellow token:fgColor.attention">11<br>#9a6700</div><div class="sw" style="background:#0969da;color:#fff" title="brightBlue token:fgColor.link">12<br>#0969da</div><div class="sw" style="background:#8250df;color:#fff" title="brightMagenta token:fgColor.done">13<br>#8250df</div><div class="sw" style="background:#127e81;color:#fff" title="brightCyan token:base.display.color.teal.5">14<br>#127e81</div><div class="sw" style="background:#bfc4ca;color:#000" title="brightWhite synthesized">15<br>#bfc4ca</div></div></section><section><h2>Primer Dark.terminal <small>dark, all hard gates pass</small></h2><pre class="term" style="background:#0d1117;color:#eff5fb"><span style="color:#7bde69;font-weight:700">ash@mac</span><span style="color:#eff5fb">:</span><span style="color:#62acff;font-weight:700">~/project</span><span style="color:#c094ff"> (main)</span><span style="color:#eff5fb"> $ </span><span style="">ls -la</span>
+<span style="color:#eff5fb">drwxr-xr-x  </span><span style="color:#62acff;font-weight:700">src</span><span style="color:#eff5fb">   </span><span style="color:#7bde69;font-weight:700">build.sh</span><span style="color:#eff5fb">   </span><span style="color:#c094ff">link</span><span style="color:#eff5fb">   README.md</span><span style="color:#eff5fb">   </span><span style="color:#1a1f25;background:#e6ac3c">sticky</span>
+<span style="color:#eff5fb">$ </span><span style="color:#eff5fb">git diff</span>
+<span style="color:#f3f9ff;font-weight:700">diff --git a/app.py b/app.py</span>
+<span style="color:#80dbf9">@@ -12,7 +12,8 @@ def main():</span>
+<span style="color:#ff8477">-    total = price * qty</span>
+<span style="color:#7bde69">+    total = round(price * qty, 2)</span>
+<span style="color:#e6ac3c">commit 3f1f428 </span><span style="color:#eff5fb">(HEAD -&gt; main)</span>
+<span style="color:#eff5fb">$ </span><span style="color:#eff5fb">make</span>
+<span style="color:#f3f9ff;font-weight:700">app.c:42:7: </span><span style="color:#ff8477;font-weight:700">error: </span><span style="color:#f3f9ff;font-weight:700">use of undeclared identifier &#x27;x&#x27;</span>
+<span style="color:#f3f9ff;font-weight:700">app.c:51:3: </span><span style="color:#c094ff;font-weight:700">warning: </span><span style="color:#f3f9ff;font-weight:700">unused variable &#x27;tmp&#x27;</span>
+<span style="color:#f3f9ff;font-weight:700">app.c:51:3: </span><span style="color:#80dbf9;font-weight:700">note: </span><span style="color:#eff5fb">declared here</span>
+<span style="color:#eff5fb">  1  [</span><span style="color:#7bde69">|||||||||</span><span style="color:#ff8477">|||</span><span style="color:#eff5fb">        42.0%</span><span style="color:#eff5fb">]</span>
+<span style="color:#1a1f25;background:#7bde69"> PID USER      CPU%  Command </span>
+<span style="color:#1a1f25;background:#80dbf9"> 812 ash       12.0  python3 </span><span style="color:#eff5fb"> F1</span><span style="color:#1a1f25;background:#80dbf9">Help </span><span style="color:#eff5fb"> F10</span><span style="color:#1a1f25;background:#80dbf9">Quit</span>
+<span style="color:#eff5fb">$ </span><span style="color:#eff5fb">git commi</span><span style="color:#9198a1">t -m &quot;fix&quot;</span><span style="color:#9198a1">   # brightBlack: suggestions, comments</span>
+<span style="color:#eff5fb;background:#16253a">selected text on the selection color, with </span><span style="color:#ff8477;background:#16253a">red</span><span style="color:#eff5fb;background:#16253a"> </span><span style="color:#7bde69;background:#16253a">green</span><span style="color:#eff5fb;background:#16253a"> </span><span style="color:#62acff;background:#16253a">blue</span>
+<span style="color:#f3f9ff;font-weight:700">bold text</span><span style="color:#eff5fb">  normal text  </span><span style="color:#c9d2dd">white</span><span style="color:#eff5fd">  brightWhite</span><span style="color:#eff5fb">  </span><span style="color:#f5ba4d">Y</span><span style="color:#7ee787">G</span><span style="color:#85c2ff">U</span><span style="color:#eff5fb">  cursor:</span><span style="color:#0d1117;background:#388bfd"> </span>
+<span style="color:#777b80">faint (SGR 2): </span><span style="color:#777b80">text </span><span style="color:#7f4542">red </span><span style="color:#40703b">green </span><span style="color:#735827">yellow </span><span style="color:#345882">blue </span><span style="color:#604d82">magenta </span><span style="color:#426f7f">cyan </span><span style="color:#7f5a57">brightRed </span><span style="color:#446382">brightBlue</span>
+
+<span style="color:#c9d2dd"># Claude Code, ANSI theme (dark-ansi)</span>
+<span style="color:#eff5fd;background:#9198a1"> &gt; fix the rounding bug in app.py                              </span>
+<span style="color:#ffafa4">⏺ </span><span style="color:#eff5fd;font-weight:700">Update</span><span style="color:#eff5fd">(app.py)</span>
+<span style="color:#777b81">  ⎿  Updated app.py with 1 addition and 1 removal</span>
+<span style="color:#777b81">     12 </span><span style="color:#eff5fd;background:#ff8477">-    total = </span><span style="color:#eff5fd;background:#ffafa4">price * qty</span><span style="color:#eff5fd;background:#ff8477">            </span>
+<span style="color:#777b81">     12 </span><span style="color:#eff5fd;background:#7bde69">+    total = </span><span style="color:#eff5fd;background:#7ee787">round(price * qty, 2)</span><span style="color:#eff5fd;background:#7bde69">  </span>
+<span style="color:#777b81">     … +14 lines (ctrl+o to expand)</span>
+<span style="color:#7ee787">⏺ </span><span style="color:#eff5fd">Tests pass.  </span><span style="color:#f5ba4d">warning </span><span style="color:#ffafa4">error </span><span style="color:#85c2ff">permission </span><span style="color:#8feaff">plan mode</span>
+<span style="color:#777b81">  import sys, time    # collapsed preview: faint text</span>
+
+<span style="color:#999999"># Claude Code, standard theme (dark)</span>
+<span style="color:#ffffff;background:#373737"> &gt; fix the rounding bug in app.py                              </span>
+<span style="color:#d77757">⏺ </span><span style="color:#ffffff;font-weight:700">Update</span><span style="color:#ffffff">(app.py)</span>
+<span style="color:#7f8082">  ⎿  Updated app.py with 1 addition and 1 removal</span>
+<span style="color:#7f8082">     12 </span><span style="color:#ffffff;background:#7a2936">-    total = </span><span style="color:#ffffff;background:#b3596b">price * qty</span><span style="color:#ffffff;background:#7a2936">            </span>
+<span style="color:#7f8082">     12 </span><span style="color:#ffffff;background:#225c2b">+    total = </span><span style="color:#ffffff;background:#38a660">round(price * qty, 2)</span><span style="color:#ffffff;background:#225c2b">  </span>
+<span style="color:#7f8082">     … +14 lines (ctrl+o to expand)</span>
+<span style="color:#4eba65">⏺ </span><span style="color:#ffffff">Tests pass.  </span><span style="color:#ffc107">warning </span><span style="color:#ff6b80">error </span><span style="color:#b1b9f9">permission </span><span style="color:#48968c">plan mode</span>
+<span style="color:#7f8082">  import sys, time    # collapsed preview: faint text</span></pre><div class="swrow"><div class="sw" style="background:#1a1f25;color:#fff" title="black derived:background">0<br>#1a1f25</div><div class="sw" style="background:#ff8477;color:#000" title="red token:fgColor.danger">1<br>#ff8477</div><div class="sw" style="background:#7bde69;color:#000" title="green token:fgColor.success">2<br>#7bde69</div><div class="sw" style="background:#e6ac3c;color:#000" title="yellow token:fgColor.attention">3<br>#e6ac3c</div><div class="sw" style="background:#62acff;color:#000" title="blue token:fgColor.link">4<br>#62acff</div><div class="sw" style="background:#c094ff;color:#000" title="magenta token:fgColor.done">5<br>#c094ff</div><div class="sw" style="background:#80dbf9;color:#000" title="cyan token:base.display.color.cyan.9">6<br>#80dbf9</div><div class="sw" style="background:#c9d2dd;color:#000" title="white synthesized">7<br>#c9d2dd</div></div><div class="swrow"><div class="sw" style="background:#9198a1;color:#fff" title="brightBlack token:fgColor.muted">8<br>#9198a1</div><div class="sw" style="background:#ffafa4;color:#000" title="brightRed derived:red">9<br>#ffafa4</div><div class="sw" style="background:#7ee787;color:#000" title="brightGreen token:base.color.green.1">10<br>#7ee787</div><div class="sw" style="background:#f5ba4d;color:#000" title="brightYellow derived:yellow">11<br>#f5ba4d</div><div class="sw" style="background:#85c2ff;color:#000" title="brightBlue token:base.display.color.blue.8">12<br>#85c2ff</div><div class="sw" style="background:#d2affd;color:#000" title="brightMagenta token:base.display.color.purple.8">13<br>#d2affd</div><div class="sw" style="background:#8feaff;color:#000" title="brightCyan derived:cyan">14<br>#8feaff</div><div class="sw" style="background:#eff5fd;color:#000" title="brightWhite synthesized">15<br>#eff5fd</div></div></section>
+<p style="max-width:900px;margin:0 auto 8px">Faint (SGR 2) samples use the measured Terminal blend (<code>colorlab.DIM_BLEND</code>, <code>colorlab.DIM_POWER</code>). The two Claude Code samples use the theme tables of Claude Code 2.1.323. The ANSI theme draws the text color on ANSI green and red cells for diff lines. The standard theme uses its own colors on the background of this theme. The report gives the contrast of each pair and the theme to use.</p>
+<p style="max-width:900px;margin:0 auto">The browser draws this preview; Terminal.app can render text a little differently.
+Run <code>scripts/demo.py</code> in a Terminal window that uses the theme to see the real colors.</p>
+</body></html>

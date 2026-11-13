@@ -1,0 +1,473 @@
+{
+  "version": 1,
+  "color": {
+    "themes": [
+      {
+        "id": "default",
+        "name": "Default"
+      },
+      {
+        "id": "root-tablet",
+        "name": "Root Tablet"
+      },
+      {
+        "id": "root-mobile",
+        "name": "Root Mobile"
+      }
+    ],
+    "tokens": [
+      {
+        "name": "hb-pink",
+        "value": "#e63e78"
+      },
+      {
+        "name": "hb-pink-action",
+        "value": "#b0235a"
+      },
+      {
+        "name": "hb-pink-hover",
+        "value": "#8f1c49"
+      },
+      {
+        "name": "hb-pink-pressed",
+        "value": "#701538"
+      },
+      {
+        "name": "hb-pink-soft",
+        "value": "#fdeef4"
+      },
+      {
+        "name": "hb-pink-10",
+        "value": "rgba(176, 35, 90, 0.10)"
+      },
+      {
+        "name": "hb-ink",
+        "value": "#0f2a2e"
+      },
+      {
+        "name": "hb-slate",
+        "value": "#55595e"
+      },
+      {
+        "name": "hb-text-muted",
+        "value": "#6b6f75"
+      },
+      {
+        "name": "hb-fog",
+        "value": "#a3a8ad"
+      },
+      {
+        "name": "hb-border",
+        "value": "#dfe1e4"
+      },
+      {
+        "name": "hb-border-strong",
+        "value": "#cfd2d6"
+      },
+      {
+        "name": "hb-hairline",
+        "value": "#eceef0"
+      },
+      {
+        "name": "hb-very-light",
+        "value": "#eaecee"
+      },
+      {
+        "name": "hb-page",
+        "value": "#f1f2f4"
+      },
+      {
+        "name": "hb-page-cool",
+        "value": "#eef1f3"
+      },
+      {
+        "name": "hb-surface-cool",
+        "value": "#f8f9fa"
+      },
+      {
+        "name": "hb-card",
+        "value": "#ffffff"
+      },
+      {
+        "name": "hb-white",
+        "value": "#ffffff"
+      },
+      {
+        "name": "hb-warm-yellow",
+        "value": "#f7b955"
+      },
+      {
+        "name": "hb-yellow-mark",
+        "value": "#fce34d"
+      },
+      {
+        "name": "hb-light-teal",
+        "value": "#a6e0d6"
+      },
+      {
+        "name": "hb-success-bg",
+        "value": "#e8f6ee"
+      },
+      {
+        "name": "hb-success-fg",
+        "value": "#1d6b3c"
+      },
+      {
+        "name": "hb-warning-bg",
+        "value": "#fdf3dc"
+      },
+      {
+        "name": "hb-warning-fg",
+        "value": "#8a5a07"
+      },
+      {
+        "name": "hb-info-bg",
+        "value": "#f4e9fb"
+      },
+      {
+        "name": "hb-info-fg",
+        "value": "#6a2a98"
+      },
+      {
+        "name": "hb-danger-bg",
+        "value": "#fdecec"
+      },
+      {
+        "name": "hb-danger-fg",
+        "value": "#a61b25"
+      },
+      {
+        "name": "hb-danger",
+        "value": "#cf2f3a"
+      },
+      {
+        "name": "color-brand",
+        "value": "{hb-pink}"
+      },
+      {
+        "name": "color-brand-action",
+        "value": "{hb-pink-action}"
+      },
+      {
+        "name": "color-brand-hover",
+        "value": "{hb-pink-hover}"
+      },
+      {
+        "name": "color-brand-pressed",
+        "value": "{hb-pink-pressed}"
+      },
+      {
+        "name": "color-brand-tint",
+        "value": "{hb-pink-soft}"
+      },
+      {
+        "name": "text-heading",
+        "value": "{hb-ink}"
+      },
+      {
+        "name": "text-body",
+        "value": "{hb-slate}"
+      },
+      {
+        "name": "text-muted",
+        "value": "{hb-text-muted}"
+      },
+      {
+        "name": "text-faint",
+        "value": "{hb-fog}"
+      },
+      {
+        "name": "text-on-brand",
+        "value": "{hb-white}"
+      },
+      {
+        "name": "surface-page",
+        "value": "{hb-page}"
+      },
+      {
+        "name": "surface-card",
+        "value": "{hb-card}"
+      },
+      {
+        "name": "surface-muted",
+        "value": "{hb-surface-cool}"
+      },
+      {
+        "name": "surface-brand",
+        "value": "{hb-pink}"
+      },
+      {
+        "name": "border-default",
+        "value": "{hb-border}"
+      },
+      {
+        "name": "border-strong",
+        "value": "{hb-border-strong}"
+      },
+      {
+        "name": "border-hairline",
+        "value": "{hb-hairline}"
+      },
+      {
+        "name": "northwind-blue",
+        "value": "rgb(21,82,150)"
+      },
+      {
+        "name": "northwind-blue-light",
+        "value": "rgb(120,170,224)"
+      },
+      {
+        "name": "northwind-blue-dark",
+        "value": "rgb(10,38,72)"
+      },
+      {
+        "name": "northwind-green",
+        "value": "rgb(46,125,50)"
+      },
+      {
+        "name": "northwind-lime",
+        "value": "rgb(158,190,60)"
+      },
+      {
+        "name": "northwind-gold",
+        "value": "rgb(212,160,23)"
+      },
+      {
+        "name": "northwind-sand",
+        "value": "rgb(232,220,196)"
+      },
+      {
+        "name": "northwind-red",
+        "value": "rgb(190,52,40)"
+      },
+      {
+        "name": "northwind-coral",
+        "value": "rgb(238,112,96)"
+      },
+      {
+        "name": "northwind-violet",
+        "value": "rgb(98,70,170)"
+      },
+      {
+        "name": "northwind-lilac",
+        "value": "rgb(206,196,238)"
+      },
+      {
+        "name": "northwind-ink",
+        "value": "rgb(24,28,36)"
+      },
+      {
+        "name": "northwind-graphite",
+        "value": "rgb(66,72,82)"
+      },
+      {
+        "name": "northwind-steel",
+        "value": "rgb(120,130,144)"
+      },
+      {
+        "name": "northwind-mist",
+        "value": "rgb(214,220,228)"
+      },
+      {
+        "name": "northwind-snow",
+        "value": "rgb(248,250,252)"
+      },
+      {
+        "name": "northwind-white",
+        "value": "rgb(255,255,255)"
+      },
+      {
+        "name": "northwind-accent-1",
+        "value": "rgb(0,150,170)"
+      },
+      {
+        "name": "northwind-accent-2",
+        "value": "rgb(240,120,30)"
+      },
+      {
+        "name": "northwind-accent-3",
+        "value": "rgb(150,60,120)"
+      },
+      {
+        "name": "northwind-accent-4",
+        "value": "rgb(70,160,110)"
+      },
+      {
+        "name": "northwind-accent-5",
+        "value": "rgb(220,190,40)"
+      },
+      {
+        "name": "northwind-surface-1",
+        "value": "rgb(244,246,249)"
+      },
+      {
+        "name": "northwind-surface-2",
+        "value": "rgb(235,239,244)"
+      },
+      {
+        "name": "northwind-surface-3",
+        "value": "rgb(225,231,238)"
+      },
+      {
+        "name": "northwind-border",
+        "value": "rgb(203,210,220)"
+      },
+      {
+        "name": "northwind-teal-deep",
+        "value": "rgb(0,82,92)"
+      },
+      {
+        "name": "northwind-teal-pale",
+        "value": "rgb(204,236,240)"
+      },
+      {
+        "name": "northwind-rose-pale",
+        "value": "rgb(250,226,232)"
+      },
+      {
+        "name": "northwind-amber-pale",
+        "value": "rgb(252,238,204)"
+      },
+      {
+        "name": "northwind-mint-pale",
+        "value": "rgb(214,242,226)"
+      },
+      {
+        "name": "northwind-sky-pale",
+        "value": "rgb(214,232,250)"
+      },
+      {
+        "name": "primary-brand-blue",
+        "value": "rgb(18,64,140)"
+      },
+      {
+        "name": "brand-gray",
+        "value": "rgb(140,146,154)"
+      },
+      {
+        "name": "neutral-0",
+        "value": "rgb(255,255,255)"
+      },
+      {
+        "name": "white",
+        "value": "rgb(255,255,255)"
+      },
+      {
+        "name": "page-tint",
+        "value": "rgb(240,241,243)"
+      }
+    ]
+  },
+  "type": {
+    "fonts": [],
+    "families": {
+      "sans": "ui-sans-serif, system-ui, sans-serif",
+      "display": "ui-serif, Georgia, serif"
+    },
+    "groups": []
+  },
+  "spacing": {
+    "tokens": [
+      {
+        "name": "space-4",
+        "value": "4px"
+      },
+      {
+        "name": "space-8",
+        "value": "8px"
+      },
+      {
+        "name": "space-12",
+        "value": "12px"
+      },
+      {
+        "name": "space-16",
+        "value": "16px"
+      },
+      {
+        "name": "space-24",
+        "value": "24px"
+      },
+      {
+        "name": "space-32",
+        "value": "32px"
+      }
+    ]
+  },
+  "radius": {
+    "tokens": [
+      {
+        "name": "radius-sm",
+        "value": "4px"
+      },
+      {
+        "name": "radius",
+        "value": "8px"
+      },
+      {
+        "name": "radius-lg",
+        "value": "12px"
+      }
+    ]
+  },
+  "shadow": {
+    "tokens": [
+      {
+        "name": "shadow-sm",
+        "value": "0 1px 2px rgba(15, 42, 46, 0.06)"
+      }
+    ]
+  },
+  "motion": {
+    "tokens": [
+      {
+        "name": "dur",
+        "value": "150ms"
+      }
+    ]
+  },
+  "fontSize": {
+    "tokens": [
+      {
+        "name": "text-h1",
+        "value": "44px"
+      },
+      {
+        "name": "text-p",
+        "value": "16px"
+      },
+      {
+        "name": "text-ui",
+        "value": "13px"
+      }
+    ]
+  },
+  "fontWeight": {
+    "tokens": [
+      {
+        "name": "fw-regular",
+        "value": "400"
+      },
+      {
+        "name": "fw-bold",
+        "value": "700"
+      }
+    ]
+  },
+  "lineHeight": {
+    "tokens": [
+      {
+        "name": "lh-normal",
+        "value": "1.45"
+      }
+    ]
+  },
+  "other": {
+    "tokens": [
+      {
+        "name": "border-width",
+        "value": "1px"
+      }
+    ]
+  }
+}

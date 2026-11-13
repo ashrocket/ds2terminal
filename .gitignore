@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+/out/
+# compiled Swift binary
+skills/ds-terminal-theme/scripts/verify_terminal
+# cache of fetched design-system files (third-party; do not commit)
+.fetch/

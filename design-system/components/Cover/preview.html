@@ -1,0 +1,52 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ds-terminal-theme cover</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../tokens.css">
+<style>
+  html, body { margin: 0; background: var(--ground); color: var(--ink); overflow: hidden; }
+  body { width: 960px; height: 288px; font-family: var(--font-mono); }
+  svg { display: block; width: 960px; height: 288px; }
+  .f-ground { fill: var(--ground); }
+  .f-ink { fill: var(--ink); }
+  .f-muted { fill: var(--muted); }
+  .f-rule { fill: var(--rule); }
+  .f-link { fill: var(--link-blue); }
+  .f-red { fill: var(--signal-red); }
+  .f-green { fill: var(--signal-green); }
+</style>
+</head>
+<body>
+<svg width="960" height="288" viewBox="0 0 960 288" role="img" aria-label="ds-terminal-theme cover">
+  <!-- Derivation 1/4: 4 blocks (link-blue, ink, signal-red, signal-green) and 3 satellites fill the right half; grid uses rule. -->
+  <!-- Derivation 2/4: blocks start at x=480; window slab sits over the dot grid; name bottom-left, longest line 422px from x=40. -->
+  <!-- Derivation 3/4: pattern is a dot grid at the 9x18 monospace cell pitch (IBM Plex Mono 15px advance, 18px line), because the tool is a terminal theme. -->
+  <!-- Derivation 4/4: radius-none 0px on all blocks; no spacing or radius steps used beyond that. -->
+  <defs>
+    <pattern id="dots" width="9" height="18" patternUnits="userSpaceOnUse">
+      <circle class="f-rule" cx="4.5" cy="9" r="1.1"/>
+    </pattern>
+  </defs>
+  <rect class="f-ground" x="0" y="0" width="960" height="288"/>
+  <rect x="480" y="0" width="480" height="288" fill="url(#dots)"/>
+  <rect class="f-link" x="480" y="0" width="120" height="288"/>
+  <rect class="f-ink" x="632" y="40" width="208" height="232"/>
+  <rect class="f-red" x="864" y="0" width="96" height="112"/>
+  <rect class="f-green" x="864" y="136" width="96" height="152"/>
+  <rect class="f-red" x="612" y="16" width="16" height="16"/>
+  <rect class="f-green" x="612" y="256" width="16" height="16"/>
+  <rect class="f-link" x="844" y="8" width="16" height="16"/>
+  <rect class="f-rule" x="656" y="72" width="128" height="6"/>
+  <rect class="f-rule" x="656" y="92" width="92" height="6"/>
+  <rect class="f-rule" x="656" y="112" width="110" height="6"/>
+  <rect class="f-ground" x="656" y="136" width="9" height="18"/>
+  <text class="display f-ink" x="40" y="168">ds-terminal</text>
+  <text class="display f-ink" x="40" y="234">-theme</text>
+  <text class="small f-muted" x="40" y="268">Design systems as Terminal.app themes.</text>
+</svg>
+</body>
+</html>

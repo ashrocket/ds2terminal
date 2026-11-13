@@ -1,0 +1,52 @@
+<!-- @dsCard group="Landing" height=520 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ds-terminal-theme hero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../tokens.css">
+<style>
+  html, body { margin: 0; background: var(--ground); color: var(--ink); }
+  body { font-family: var(--font-mono); -webkit-text-size-adjust: 100%; }
+  .hero {
+    box-sizing: border-box;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: var(--space-4) 16px;
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .wordmark { margin: 0; overflow-wrap: anywhere; color: var(--ink); }
+  .lead { margin: var(--space-3) 0 0; max-width: 40ch; color: var(--ink); }
+  .actions { margin-top: var(--space-4); }
+  .action {
+    display: inline-block;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    background: var(--link-blue);
+    color: var(--ground);
+    text-decoration: none;
+  }
+  .action:focus-visible { outline: 2px solid var(--link-blue); outline-offset: 3px; }
+  @media (max-width: 480px) {
+    .hero { padding: var(--space-3) 16px; }
+  }
+</style>
+</head>
+<body>
+  <main class="hero">
+    <h1 class="display wordmark">ds-terminal-theme</h1>
+    <p class="lead">A Claude skill that converts a design system into a readable Apple Terminal (Terminal.app) theme.</p>
+    <div class="actions">
+      <a class="action body" href="#install">Install the skill</a>
+    </div>
+  </main>
+</body>
+</html>

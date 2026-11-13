@@ -1,0 +1,7 @@
+{"global":{"colors":{"blue":{"500":{"value":"#2563eb","type":"color"}},"gray":{"50":{"value":"#f9fafb","type":"color"},"900":{"value":"#111827","type":"color"}}}},
+ "light":{"bg":{"default":{"value":"{colors.gray.50}","type":"color"}},"fg":{"default":{"value":"{colors.gray.900}","type":"color"}},
+          "accent":{"subtle":{"value":"{colors.blue.500}","type":"color","$extensions":{"studio.tokens":{"modify":{"type":"lighten","value":"0.6","space":"srgb"}}}}}},
+ "dark":{"bg":{"default":{"value":"{colors.gray.900}","type":"color"}},"fg":{"default":{"value":"{colors.gray.50}","type":"color"}},
+         "accent":{"subtle":{"value":"{colors.blue.500}","type":"color","$extensions":{"studio.tokens":{"modify":{"type":"alpha","value":"0.3"}}}}}},
+ "$themes":[{"id":"t1","name":"Light","selectedTokenSets":{"global":"source","light":"enabled"}},{"id":"t2","name":"Dark","selectedTokenSets":{"global":"source","dark":"enabled"}}],
+ "$metadata":{"tokenSetOrder":["global","light","dark"]}}

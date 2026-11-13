@@ -1,0 +1,8 @@
+{"color":{"$type":"color",
+  "base":{"white":{"$value":{"colorSpace":"srgb","components":[1,1,1],"hex":"#ffffff"}},
+          "black":{"$value":{"colorSpace":"oklch","components":[0.15,0.01,260],"alpha":1}},
+          "red":{"$value":"#d1242f"}},
+  "bg":{"$value":"{color.base.white}","$extensions":{"mode":{"dark":"{color.base.black}"}}},
+  "fg":{"$value":"{color.base.black}","$extensions":{"mode":{"dark":"{color.base.white}"}}},
+  "danger":{"$value":"{color.base.red}","$description":"errors"}},
+ "font":{"mono":{"$type":"fontFamily","$value":["Iosevka","ui-monospace","monospace"]}}}

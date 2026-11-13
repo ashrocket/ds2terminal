@@ -1,0 +1,13 @@
+{"version":1,
+ "color":{"themes":[{"id":"light","name":"Light"},{"id":"dark","name":"Dark"}],
+  "tokens":[
+   {"name":"brand","value":"oklch(0.62 0.19 259.8)","usage":"Primary brand"},
+   {"name":"bg","value":{"light":"#ffffff","dark":"lab(8 0 -2)"}},
+   {"name":"fg","value":{"light":"hsl(220 15% 15%)","dark":"color(display-p3 0.93 0.93 0.95)"}},
+   {"name":"accent","value":{"light":"{brand}","dark":"oklab(0.75 -0.05 -0.12)"}},
+   {"name":"danger","value":"lch(55 75 30)"},
+   {"name":"warn","value":"color(display-p3 1 0.7 0)"},
+   {"name":"muted","value":"hwb(220 40% 40%)"},
+   {"name":"link","value":"{accent}"}
+  ]},
+ "type":{"families":{"font-mono":"'JetBrains Mono', ui-monospace, monospace","font-sans":"Inter, system-ui, sans-serif"}}}

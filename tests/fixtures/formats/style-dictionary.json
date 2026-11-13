@@ -1,0 +1,30 @@
+{
+  "color": {
+    "brand": {
+      "primary": {"value": "#3a5bd9", "type": "color", "comment": "Primary brand blue"},
+      "action": {"value": "#2742b0", "type": "color"},
+      "tint": {"value": "#e8edfc", "type": "color"}
+    },
+    "text": {
+      "heading": {"value": "#14181f", "type": "color"},
+      "body": {"value": "#3d4450", "type": "color"},
+      "muted": {"value": "#6a7280", "type": "color"}
+    },
+    "surface": {
+      "page": {"value": "#f5f6f8", "type": "color"},
+      "card": {"value": "#ffffff", "type": "color"}
+    },
+    "border": {
+      "default": {"value": "#dde1e7", "type": "color"}
+    },
+    "status": {
+      "danger": {"value": "#c4313f", "type": "color"},
+      "success": {"value": "#2a8a4f", "type": "color"},
+      "warning": {"value": "#b86e00", "type": "color"},
+      "info": {"value": "#2f7fb8", "type": "color"}
+    },
+    "accent": {
+      "main": {"value": "{color.brand.primary.value}", "type": "color"}
+    }
+  }
+}
